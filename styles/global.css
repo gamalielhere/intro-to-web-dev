@@ -1,4 +1,5 @@
 @import url('header.css');
+@import url('footer.css');
 
 * {
   color: #00231C !important;
@@ -27,12 +28,13 @@
 }
 
 .body-strong {
+  font-family: "Calibri", sans-serif;
   font-size: 16px;
   font-weight: bold;
 }
 
 .body {
-  font-family: Calibri;
+  font-family: "Calibri", sans-serif;
   font-size: 16px
 }
 
