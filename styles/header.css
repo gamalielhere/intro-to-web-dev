@@ -1,0 +1,23 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.header-container a {
+  text-decoration: none;
+  padding: 4px 8px;
+}
+
+.header-container a.active {
+  background-color: #91B9D2;
+  border-radius: 4px;
+  color: white !important;
+}
+
+@media all and (max-width: 768px) {
+  .header-container nav {
+    display: none;
+  }
+}

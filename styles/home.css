@@ -1,0 +1,28 @@
+.home-banner {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+
+  background-image: url('../assets/Client2_GroupYoga.png');
+  background-size: 100%;
+}
+
+.home-banner .text-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-banner .text-container p,
+.home-banner .text-container h1 {
+  margin: 0;
+}
+
+.hero-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
