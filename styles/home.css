@@ -18,6 +18,7 @@
 .home-banner .text-container p,
 .home-banner .text-container h1 {
   margin: 0;
+  color: #fcfcfc !important;
 }
 
 .hero-images {

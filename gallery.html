@@ -11,17 +11,31 @@
 
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/global.css">
+    <script src="./js/nav.js"></script>
 </head>
 
 <body>
     <header class="header-container">
         <img src="abc-studios-logo.png" alt="ABC Studios Logo" height="35px" width="35px" />
-        <nav>
-            <a class="subtitle" href="./home.html">Home</a>
+        <nav class="full-screen-nav">
+            <a class="subtitle" href="./index.html">Home</a>
             <a class="subtitle" href="./about.html">About</a>
             <a class="subtitle active" href="./gallery.html">Gallery</a>
             <a class="subtitle" href="./testimonials.html">Testimonials</a>
         </nav>
+        <div class="mobile-screen-menu-button">
+            <button onclick="toggleMenu()">
+                <img src="./assets/menu.png" alt="Menu" height="20px" width="20px" />
+            </button>
+        </div>
+
+        <nav id="mobileNav" class="mobile-screen-nav">
+            <a class="subtitle" href="./index.html">Home</a>
+            <a class="subtitle" href="./about.html">About</a>
+            <a class="subtitle active" href="./gallery.html">Gallery</a>
+            <a class="subtitle" href="./testimonials.html">Testimonials</a>
+        </nav>
+
     </header>
 
     <section>
