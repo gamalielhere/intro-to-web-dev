@@ -1,0 +1,135 @@
+.about-banner {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+
+  background-image: url('../assets/Client2_IndividualYoga.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.about-banner .text-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+}
+
+.about-banner .text-container h1,
+.about-banner .text-container p {
+  margin: 0;
+  color: #fcfcfc !important;
+  padding: 0 60px
+}
+
+.about-left img,
+.about-right img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-left,
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-left .about-text {
+  width: 60%;
+  padding-right: 20px;
+}
+
+.about-right .about-text {
+  width: 60%;
+  padding-left: 20px;
+  text-align: right;
+}
+
+.faq-section {
+  padding: 60px 45px;
+}
+
+.feedback-section {
+  padding: 0px 45px 60px;
+}
+
+.feedback-section form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 500px;
+  margin: auto;
+}
+
+.feedback-section form input,
+.feedback-section form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.feedback-section form textarea {
+  height: 150px;
+}
+
+.feedback-section form button {
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+
+@media all and (max-width: 768px) {
+  .about-banner {
+    height: 70vh;
+    background-size: cover;
+  }
+
+  .about-left,
+  .about-right {
+    padding: 0 30px;
+  }
+
+  .about-left .about-text,
+  .about-right .about-text {
+    padding: 0px 0px !important;
+    width: 100%;
+    text-align: left;
+  }
+
+  .about-left img,
+  .about-right img {
+    display: none;
+  }
+
+  .faq-section {
+    padding: 60px 25px;
+  }
+
+  .feedback-section {
+    padding: 0px 25px 60px;
+  }
+
+  .feedback-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 250px;
+    margin: auto;
+  }
+
+  .feedback-section form input,
+  .feedback-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+  }
+}

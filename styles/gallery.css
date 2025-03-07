@@ -1,0 +1,66 @@
+.gallery-banner {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+
+  background-image: url('../assets/Client2_GroupPilates.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-banner .text-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+}
+
+.gallery-banner .text-container h1 {
+  margin: 0;
+  color: #fcfcfc !important;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 250px;
+  height: 450px;
+}
+
+.product-card button {
+  align-self: baseline;
+  padding: 5px 10px;
+  font-family: "Calibri", sans-serif;
+  cursor: pointer;
+}
+
+.products-section {
+  padding: 60px 35px;
+}
+
+@media all and (max-width: 768px) {
+  .gallery-banner {
+    height: 70vh;
+    background-size: cover;
+  }
+
+  .products-section {
+    padding: 60px 45px;
+  }
+
+}

@@ -1,0 +1,55 @@
+.testimonial-banner {
+  height: 65vh;
+  width: 100vw;
+  display: flex;
+
+  background-image: url('../assets/Client2_GroupKickboxing.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.testimonial-banner .text-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
+}
+
+.testimonial-banner .text-container h1,
+.testimonial-banner .text-container p {
+  margin: 0;
+  color: #fcfcfc !important;
+  padding: 0 60px
+}
+
+.customer-section {
+  padding: 60px 45px;
+}
+
+.text-right {
+  text-align: right;
+} 
+
+.testimonials-container {
+  width: 600px;
+  margin: 0 auto;
+}
+
+@media all and (max-width: 768px) {
+  .testimonial-banner {
+    height: 70vh;
+    background-size: cover;
+  }
+
+  .customer-section {
+    padding: 60px 35px;
+  }
+
+  .testimonials-container {
+    width: 100%;
+  }
+  
+}

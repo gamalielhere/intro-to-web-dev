@@ -4,7 +4,8 @@
   display: flex;
 
   background-image: url('../assets/Client2_GroupYoga.png');
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .home-banner .text-container {
@@ -13,6 +14,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background: rgba(0, 0, 0, .4);
+  width: 100%;
 }
 
 .home-banner .text-container p,
@@ -88,6 +91,7 @@
   align-self: baseline;
   padding: 5px 10px;
   font-family: "Calibri", sans-serif;
+  cursor: pointer;
 }
 
 .shopping-section .offer {
