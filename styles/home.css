@@ -48,8 +48,15 @@
   }
   
   .shopping-section,
-  .products-section {
+  .products-section,
+  .perks-section,
+  .collections-section {
     padding: 60px 45px;
+  }
+
+  .perks-section .perks-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
@@ -66,4 +73,17 @@
 .product-card button {
   align-self: baseline;
   padding: 5px 10px;
+}
+
+.shopping-section .offer {
+  display: flex;
+}
+
+.shopping-section .offer .title {
+  margin-top: 0;
+}
+
+.shopping-section .offer i {
+  font-size: 25px;
+  margin-right: 10px;
 }
