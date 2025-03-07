@@ -60,6 +60,19 @@
   }
 }
 
+.shopping-section,
+.products-section,
+.perks-section,
+.collections-section {
+  padding: 30px 25px;
+}
+
+.product-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 .product-card {
   display: flex;
   flex-direction: column;
@@ -68,11 +81,13 @@
   margin: 20px;
   border: 1px solid black;
   border-radius: 5px;
+  width: 250px;
 }
 
 .product-card button {
   align-self: baseline;
   padding: 5px 10px;
+  font-family: "Calibri", sans-serif;
 }
 
 .shopping-section .offer {
