@@ -29,6 +29,11 @@
   justify-content: space-around;
   align-items: center;
   padding: 20px;
+  background-color: #17253F;
+}
+
+.hero-images p {
+  color: #fcfcfc !important;
 }
 
 @media all and (max-width: 768px) {
@@ -63,6 +68,16 @@
   }
 }
 
+.perks-section {
+  background-color: #17253F;
+}
+
+.perks-section h2,
+.perks-section h3,
+.perks-section p {
+  color: #fcfcfc !important;
+}
+
 .shopping-section,
 .products-section,
 .perks-section,
@@ -79,10 +94,10 @@
 .product-card {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   padding: 20px;
   margin: 20px;
-  border: 1px solid black;
+  border: 1px solid #17253F;
   border-radius: 5px;
   width: 250px;
 }

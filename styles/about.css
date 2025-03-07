@@ -25,6 +25,14 @@
   padding: 0 60px
 }
 
+.about-left {
+  background-color: #17253F;
+}
+
+.about-right {
+  background-color: #2343BD;
+}
+
 .about-left img,
 .about-right img {
   width: 100%;
@@ -50,6 +58,12 @@
   text-align: right;
 }
 
+.about-text p,
+.about-text h2 {
+  color: #fcfcfc !important;
+
+}
+
 .faq-section {
   padding: 60px 45px;
 }
@@ -73,6 +87,7 @@
   width: 100%;
   padding: 10px;
   margin: 10px 0;
+  border: 1px solid #2343BD;
 }
 
 .feedback-section form textarea {

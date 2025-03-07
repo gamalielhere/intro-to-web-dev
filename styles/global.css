@@ -47,3 +47,10 @@
 .text-center {
   text-align: center;
 }
+
+button {
+  background-color: #91b9d2;
+  border: 1px solid #91b9d2;
+  color: #fcfcfc !important;
+  border-radius: 4px;
+}
