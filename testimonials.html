@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/global.css">
 
@@ -55,49 +57,63 @@
         <div class="testimonials-container">
             <div>
                 <p class="body">
-                    “I love the welcoming atmosphere here. The trainers really take the time to help me perfect my form and keep me
-            motivated.” 
+                    “I love the welcoming atmosphere here. The trainers really take the time to help me perfect my form
+                    and keep me
+                    motivated.”
                 </p>
-             <p class="text-right">- Sarah T., July 15, 2023</p>
-        </div>
-            
+                <p class="text-right">- Sarah T., July 15, 2023</p>
+            </div>
+
             <div>
                 <p class="body">
-                    “Great community vibe! The group classes are challenging but fun, and I've seen real progress in just a few
-            weeks.”  
+                    “Great community vibe! The group classes are challenging but fun, and I've seen real progress in
+                    just a few
+                    weeks.”
                 </p>
-            <p class="text-right">- Mark D., August 2, 2023</p>
-        </div>
-            
+                <p class="text-right">- Mark D., August 2, 2023</p>
+            </div>
+
             <div>
                 <p class="body">
-                    “The personal training sessions are fantastic. My coach created a custom plan that fits my goals and busy
-            schedule.”
+                    “The personal training sessions are fantastic. My coach created a custom plan that fits my goals and
+                    busy
+                    schedule.”
                 </p>
-              <p class="text-right">- Emily H., September 10, 2023</p>
-        </div>
-            
+                <p class="text-right">- Emily H., September 10, 2023</p>
+            </div>
+
             <div>
                 <p class="body">
-                    “I was nervous to start, but the staff is super friendly and knowledgeable. They made me feel right at home from
-            day one.” 
+                    “I was nervous to start, but the staff is super friendly and knowledgeable. They made me feel right
+                    at home from
+                    day one.”
                 </p>
-             <p class="text-right">- James R., October 5, 2023</p>
-        </div>
-            
+                <p class="text-right">- James R., October 5, 2023</p>
+            </div>
+
             <div>
                 <p class="body">
-                    “Love the variety! One day I'm in a yoga class, the next I'm hitting kickboxing. I've never been more excited to
-            work out."
+                    “Love the variety! One day I'm in a yoga class, the next I'm hitting kickboxing. I've never been
+                    more excited to
+                    work out."
                 </p>
-             <p class="text-right">- Bianca M., November 18, 2023</p>
-        </div>
+                <p class="text-right">- Bianca M., November 18, 2023</p>
+            </div>
 
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 ABC Studios</p>
+        <div>
+            <p class="captions">&copy; 2025 ABC Studios</p>
+            <div>
+                <h3 class="body">Subscribe to our newsletter</h3>
+                <form class="email-input-container" id="emailForm" action="javascript:void(0);">
+                    <input class="body" placeholder="Enter email" required type="email" />
+                    <input type="submit" class="subscribe-btn body" onclick="formSubmit(event)" value="Subscribe" />
+                </form>
+            </div>
+        </div>
         <div class="socials">
             <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -105,6 +121,8 @@
             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script src="./js/footer.js"></script>
 </body>
 
 </html>

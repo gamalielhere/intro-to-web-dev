@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/global.css">
 
@@ -19,6 +21,22 @@
 </head>
 
 <body>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 class="title-large">View Cart</h2>
+            </div>
+            <div class="modal-body">
+                <p>Some text in the Modal Body</p>
+                <p>Some other text...</p>
+            </div>
+        </div>
+
+    </div>
     <header class="header-container">
         <img src="abc-studios-logo.png" alt="ABC Studios Logo" height="35px" width="35px" />
         <nav class="full-screen-nav">
@@ -52,6 +70,7 @@
 
     <section class="products-section">
         <h2 class="title">Products</h2>
+        <button class="body view-cart-btn" id="myBtn">View cart</button>
         <div class="product-list">
             <div class="product-card">
                 <img src="./assets/Client2_TeeShirt.png" height="140" width="200" alt="abc products" />
@@ -64,7 +83,8 @@
             <div class="product-card">
                 <img src="./assets/Client2_WaterBottle.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Water Bottle</h3>
-                <p class="subtitle">Stay hydrated in style with our durable, leak-proof water bottle. Its lightweight design
+                <p class="subtitle">Stay hydrated in style with our durable, leak-proof water bottle. Its lightweight
+                    design
                     makes it easy to carry wherever
                     you go, while the secure cap prevents spills during even the busiest of days.</p>
                 <button>Add To Cart</button>
@@ -72,59 +92,75 @@
             <div class="product-card">
                 <img src="./assets/Client2_YogaMat.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Yoga Mat</h3>
-                <p class="subtitle">Enhance your practice with our premium yoga mat, crafted to provide optimal cushioning
+                <p class="subtitle">Enhance your practice with our premium yoga mat, crafted to provide optimal
+                    cushioning
                     and stability.</p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupKickboxing.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Group Kickboxing</h3>
-                <p class="subtitle">Harness the power of teamwork and high-energy vibes in group kickboxing classes. With coordinated routines and drills,
-                you'll learn proper technique while pushing each other to new limits. </p>
+                <p class="subtitle">Harness the power of teamwork and high-energy vibes in group kickboxing classes.
+                    With coordinated routines and drills,
+                    you'll learn proper technique while pushing each other to new limits. </p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupPilates.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Group Pilates</h3>
                 <p class="subtitle"> Group Pilates
-                combines the energy of a shared workout with clear, instructor-led guidance, helping you and your classmates achieve
-                better posture, stronger abs, and a more stable, balanced body.</p>
+                    combines the energy of a shared workout with clear, instructor-led guidance, helping you and your
+                    classmates achieve
+                    better posture, stronger abs, and a more stable, balanced body.</p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupYoga.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Group Yoga</h3>
                 <p class="subtitle">Flow through a guided
-                sequence of poses alongside like-minded classmates, creating a supportive atmosphere that makes improving flexibility,
-                building strength, and finding mental clarity a fun, group experience.</p>
+                    sequence of poses alongside like-minded classmates, creating a supportive atmosphere that makes
+                    improving flexibility,
+                    building strength, and finding mental clarity a fun, group experience.</p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualKickboxing.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Individual Kickboxing</h3>
-                <p class="subtitle">Unleash your inner fighter with custom-tailored kickboxing sessions that focus on technique, power, and cardiovascular
-                endurance. </p>
+                <p class="subtitle">Unleash your inner fighter with custom-tailored kickboxing sessions that focus on
+                    technique, power, and cardiovascular
+                    endurance. </p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualPilates.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Individual Pilates</h3>
-                <p class="subtitle">Strengthen and lengthen your muscles with precision through individualized Pilates coaching. Enjoy a session carefully
-                designed to target your core, improve posture, and enhance body alignment. </p>
+                <p class="subtitle">Strengthen and lengthen your muscles with precision through individualized Pilates
+                    coaching. Enjoy a session carefully
+                    designed to target your core, improve posture, and enhance body alignment. </p>
                 <button>Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualYoga.png" height="140" width="200" alt="abc products" />
                 <h3 class="title">ABC Individual Yoga</h3>
-                <p class="subtitle">Experience a deeply personalized flow that caters to your unique flexibility, mobility, and relaxation needs. Our
-                one-on-one sessions allow for customized postures, pacing, and hands-on guidance.</p>
+                <p class="subtitle">Experience a deeply personalized flow that caters to your unique flexibility,
+                    mobility, and relaxation needs. Our
+                    one-on-one sessions allow for customized postures, pacing, and hands-on guidance.</p>
                 <button>Add To Cart</button>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2025 ABC Studios</p>
+        <div>
+            <p class="captions">&copy; 2025 ABC Studios</p>
+            <div>
+                <h3 class="body">Subscribe to our newsletter</h3>
+                <form class="email-input-container" id="emailForm" action="javascript:void(0);">
+                    <input class="body" placeholder="Enter email" required type="email" />
+                    <input type="submit" class="subscribe-btn body" onclick="formSubmit(event)" value="Subscribe" />
+                </form>
+            </div>
+        </div>
         <div class="socials">
             <a href="#" target="_blank"><i class="fa fa-twitter"></i></a>
             <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -132,6 +168,8 @@
             <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
         </div>
     </footer>
+
+    <script src="./js/footer.js"></script>
 </body>
 
 </html>

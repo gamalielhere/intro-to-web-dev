@@ -1,14 +1,48 @@
 footer {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0;
+  padding: 40px;
   background-color: #91B9D2;
+}
+
+footer .subscribe-btn {
+  background-color: #fcfcfc;
+  color: #17253F;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 footer .socials {
   display: flex;
   justify-content: space-around;
   width: 130px;
+}
+
+footer h3 {
+  margin: 0 !important;
+}
+
+footer .email-input-container input {
+  height: 30px;
+}
+
+footer .email-input-container input:last-child {
+  height: 36px;
+}
+
+footer .email-input-container {
+  display: flex;
+  align-items: center;
+}
+
+@media all and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    padding: 20px;
+    height: 135px;
+    text-align: center;
+  }
 }

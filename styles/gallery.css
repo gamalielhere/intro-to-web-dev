@@ -1,3 +1,5 @@
+@import url('./modal.css');
+
 .gallery-banner {
   height: 65vh;
   width: 100vw;
@@ -51,6 +53,11 @@
 
 .products-section {
   padding: 60px 35px;
+}
+
+.view-cart-btn {
+  padding: 10px 20px;
+  cursor: pointer;
 }
 
 @media all and (max-width: 768px) {
