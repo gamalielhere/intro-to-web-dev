@@ -64,7 +64,8 @@
 
 }
 
-.faq-section, .hours-section {
+.faq-section,
+.hours-section {
   padding: 60px 45px;
 }
 
@@ -92,6 +93,17 @@
 
 .feedback-section form textarea {
   height: 150px;
+}
+
+.feedback-section form .checkbox-container {
+  display: flex;
+  align-self: start;
+  margin: 10px 0;
+}
+
+.feedback-section form .checkbox-container input {
+  width: auto;
+  margin: 0 5px 0 0 !important;
 }
 
 .feedback-section form button {
