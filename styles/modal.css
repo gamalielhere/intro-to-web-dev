@@ -74,6 +74,19 @@
    margin-top: 80px;
  }
 
+ .modal-actions {
+   padding: 20px;
+ }
+
+ .modal-actions button {
+   background-color: #91b9d2;
+   border: 1px solid #91b9d2;
+   color: #fcfcfc !important;
+   border-radius: 4px;
+   padding: 10px 20px;
+   cursor: pointer;
+ }
+
  @media all and (max-width: 768px) {
    .modal-content {
      width: 80%;

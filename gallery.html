@@ -31,8 +31,13 @@
                 <h2 class="title-large">View Cart</h2>
             </div>
             <div class="modal-body">
-                <p>Some text in the Modal Body</p>
-                <p>Some other text...</p>
+                <div class="body">
+                    Not items in cart
+                </div>
+            </div>
+            <div class="modal-actions">
+                <button class="body" id="clear-cart-btn" onclick="clearCart()">Clear Cart</button>
+                <button class="body" id="checkout-btn" onclick="processOrder    ()">Process Order</button>
             </div>
         </div>
 
@@ -78,7 +83,7 @@
                 <p class="subtitle">Represent your dedication to fitness in our signature tee, crafted from breathable,
                     soft-stretch fabric that keeps you
                     comfortable during the toughest workouts.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Tshirt')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_WaterBottle.png" height="140" width="200" alt="abc products" />
@@ -87,7 +92,7 @@
                     design
                     makes it easy to carry wherever
                     you go, while the secure cap prevents spills during even the busiest of days.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Water bottle')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_YogaMat.png" height="140" width="200" alt="abc products" />
@@ -95,7 +100,7 @@
                 <p class="subtitle">Enhance your practice with our premium yoga mat, crafted to provide optimal
                     cushioning
                     and stability.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Yoga Mat')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupKickboxing.png" height="140" width="200" alt="abc products" />
@@ -103,7 +108,7 @@
                 <p class="subtitle">Harness the power of teamwork and high-energy vibes in group kickboxing classes.
                     With coordinated routines and drills,
                     you'll learn proper technique while pushing each other to new limits. </p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Group Kickboxing')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupPilates.png" height="140" width="200" alt="abc products" />
@@ -112,7 +117,7 @@
                     combines the energy of a shared workout with clear, instructor-led guidance, helping you and your
                     classmates achieve
                     better posture, stronger abs, and a more stable, balanced body.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Group Pilates')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_GroupYoga.png" height="140" width="200" alt="abc products" />
@@ -121,7 +126,7 @@
                     sequence of poses alongside like-minded classmates, creating a supportive atmosphere that makes
                     improving flexibility,
                     building strength, and finding mental clarity a fun, group experience.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Group Yoga')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualKickboxing.png" height="140" width="200" alt="abc products" />
@@ -129,7 +134,7 @@
                 <p class="subtitle">Unleash your inner fighter with custom-tailored kickboxing sessions that focus on
                     technique, power, and cardiovascular
                     endurance. </p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Individual Kickboxing')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualPilates.png" height="140" width="200" alt="abc products" />
@@ -137,7 +142,7 @@
                 <p class="subtitle">Strengthen and lengthen your muscles with precision through individualized Pilates
                     coaching. Enjoy a session carefully
                     designed to target your core, improve posture, and enhance body alignment. </p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Individual Pilates')">Add To Cart</button>
             </div>
             <div class="product-card">
                 <img src="./assets/Client2_IndividualYoga.png" height="140" width="200" alt="abc products" />
@@ -145,7 +150,7 @@
                 <p class="subtitle">Experience a deeply personalized flow that caters to your unique flexibility,
                     mobility, and relaxation needs. Our
                     one-on-one sessions allow for customized postures, pacing, and hands-on guidance.</p>
-                <button>Add To Cart</button>
+                <button onclick="addToCart(event, 'ABC Studios Individual Yoga')">Add To Cart</button>
             </div>
         </div>
     </section>
@@ -170,6 +175,7 @@
     </footer>
 
     <script src="./js/gallery.js"></script>
+    <script src="./js/modal.js"></script>
     <script src="./js/footer.js"></script>
 </body>
 
