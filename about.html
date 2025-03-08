@@ -142,12 +142,12 @@
         <p class="body">Help us improve by sharing your thoughts, experiences, and suggestions. Let's grow stronger
             together!</p>
 
-        <form>
-            <input class="body" name="fname" placeholder="First Name" />
-            <input class="body" name="lname" placeholder="Last Name" />
-            <input class="body" name="email" placeholder="Email" />
-            <textarea class="body" name="message" placeholder="Message"></textarea>
-            <button class="body">Submit</button>
+        <form action="javascript:void(0);" id="contactUsForm">
+            <input class="body" name="fname" required type="text" placeholder="First Name" />
+            <input class="body" name="lname" required type="text" placeholder="Last Name" />
+            <input class="body" name="email" required type="email" placeholder="Email" />
+            <textarea class="body" name="message" required type="text" placeholder="Message"></textarea>
+            <input class="body" onclick="contactUsSubmit(event)" value="Submit" type="submit" />
         </form>
     </section>
 
@@ -170,6 +170,7 @@
         </div>
     </footer>
 
+    <script src="./js/about.js"></script>
     <script src="./js/footer.js"></script>
 </body>
 
