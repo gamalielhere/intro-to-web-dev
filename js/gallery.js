@@ -1,18 +1,33 @@
 let cart = [];
+const seshStorage = window.sessionStorage.getItem("cart");
+if (seshStorage) {
+  cart = JSON.parse(seshStorage);
+  readStorage();
+} else {
+  window.sessionStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function readStorage() {
+  const container = document.querySelector(".modal-body");
+  if (container) {
+    container.innerHTML = "";
+
+    for (const item in cart) {
+      const itemContainer = document.createElement("div");
+      itemContainer.innerHTML = `${cart[item]}`;
+      container.appendChild(itemContainer);
+    }
+  }
+}
 
 function addToCart(event, item) {
   event.stopPropagation();
-  const container = document.querySelector(".modal-body");
-  container.innerHTML = "";
+
+  cart.push(item);
+  window.sessionStorage.setItem("cart", JSON.stringify(cart));
+  readStorage();
 
   alert("Item: " + item + " added to cart!");
-  cart.push(item);
-
-  for (const item in cart) {
-    const itemContainer = document.createElement("div");
-    itemContainer.innerHTML = `${cart[item]}`;
-    container.appendChild(itemContainer);
-  }
 }
 
 function clearCart() {
@@ -22,8 +37,10 @@ function clearCart() {
     return;
   }
   cart = [];
-  container.innerHTML = '<div class="body">No items in cart </div>';
+  if (container)
+    container.innerHTML = '<div class="body">No items in cart </div>';
   alert("Cart cleared!");
+  window.sessionStorage.setItem("cart", JSON.stringify(cart));
 }
 
 function processOrder() {
@@ -32,7 +49,9 @@ function processOrder() {
     alert("No items in cart");
     return;
   }
-  container.innerHTML = '<div class="body">No items in cart </div>';
+  if (container)
+    container.innerHTML = '<div class="body">No items in cart </div>';
   alert("Order processed!");
   cart = [];
+  window.sessionStorage.setItem("cart", JSON.stringify(cart));
 }
