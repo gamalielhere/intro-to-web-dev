@@ -142,12 +142,12 @@
         <p class="body">Help us improve by sharing your thoughts, experiences, and suggestions. Let's grow stronger
             together!</p>
 
-        <form action="javascript:void(0);" id="contactUsForm">
+        <form action="javascript:void(0);" id="contactUsForm" onsubmit="contactUsSubmit(event)">
             <input class="body" name="fname" required type="text" placeholder="First Name" />
             <input class="body" name="lname" required type="text" placeholder="Last Name" />
             <input class="body" name="email" required type="email" placeholder="Email" />
             <textarea class="body" name="message" required type="text" placeholder="Message"></textarea>
-            <input class="body" onclick="contactUsSubmit(event)" value="Submit" type="submit" />
+            <input class="body" value="Submit" type="submit" />
         </form>
     </section>
 
@@ -156,9 +156,10 @@
             <p class="captions">&copy; 2025 ABC Studios</p>
             <div>
                 <h3 class="body">Subscribe to our newsletter</h3>
-                <form class="email-input-container" id="emailForm" action="javascript:void(0);">
+                <form class="email-input-container" id="emailForm" action="javascript:void(0);"
+                    onsubmit="formSubmit(event)">
                     <input class="body" placeholder="Enter email" required type="email" />
-                    <input type="submit" class="subscribe-btn body" onclick="formSubmit(event)" value="Subscribe" />
+                    <input type="submit" class="subscribe-btn body" value="Subscribe" />
                 </form>
             </div>
         </div>
