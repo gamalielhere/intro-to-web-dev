@@ -40,7 +40,7 @@ function clearCart() {
   if (container)
     container.innerHTML = '<div class="body">No items in cart </div>';
   alert("Cart cleared!");
-  window.sessionStorage.setItem("cart", JSON.stringify(cart));
+  window.sessionStorage.removeItem("cart");
 }
 
 function processOrder() {
@@ -53,5 +53,5 @@ function processOrder() {
     container.innerHTML = '<div class="body">No items in cart </div>';
   alert("Order processed!");
   cart = [];
-  window.sessionStorage.setItem("cart", JSON.stringify(cart));
+  window.sessionStorage.removeItem("cart");
 }
